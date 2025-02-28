@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title> E-Commers</title>
+        <!-- link to css file  -->
+<link rel="stylesheet" href="print.css">
+        <!-- Box icons  -->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
+        <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    </head>        
+    
+ <body>
+    <!-- navbar -->
+    
+<header>
+   <a href="#" class="logo"><i class='bx bx-store' ></i>vipanee</a>
+   
+   <ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#new">New Arriaval</a></li>
+    <li><a href="#product">Product</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <!-- <li><a href="#cart">Cart <i class='bx bx-cart-download' id="cart-icon" ></i></a></li> -->
+   </ul>
+
+   <div class="nav-search">
+    <select class="search-select">
+        <option>All</option>
+        <option>Electronic</option>
+        <option>Beauty</option>
+        <option>Kitchen</option>
+        <option>Home</option>
+        <option>Clothes</option>
+        <option>Toys</option>
+    </select>
+         <input placeholder="Search vipanee " class=" search-input">
+    <div class="search-icon">
+         <i class='bx bx-search' id="search-icon" ></i>
+    </div>
+</div> 
+
+   
+
+ 
+   <!-- Icons -->
+    <div class="header-icons">
+        <i class='bx bx-cart-download' id="cart-icon" ></i>
+        <i class='bx bxs-edit-location'id="location-icon" ></i>
+        <i class='bx bxs-user-account' id="user-icon"></i>
+        <i class='bx bx-menu' id="menu-icon" ></i> 
+    </div>
+
+            <!-- search box -->
+<!-- <div class="search-box"> 
+    <input type="search" name="" id="" placeholder="serch vipanee">
+    <i class='bx bx-search' id="search-icon" ></i> 
+ </div> -->
+
+<!--  location
+ <div class="location">
+    <h2>Select State and City</h2>
+    <form>
+        <div class="form-group">
+            <label for="state">Select State:</label>
+            <select id="state" name="state" onchange="updateCities()">
+                <option value="">-- Select State --</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+                <option value="Florida">Florida</option>
+                <option value="New York">New York</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">Select City:</label>
+            <select id="city" name="city">
+                <option value="">-- Select City --</option>
+            </select>
+        </div>
+    </form>
+</div> -->
+
+
+ <!-- Cart Box -->
+    <div class="cart">
+
+        <!-- Box1 -->
+        <div class="box">
+            <img src="t-shirt1.jpg" alt="">
+            <div class="text">
+                <h3>T-shirt</h3>
+                <span>$50</span>
+                <span>x1</span>
+                <i class='bx bxs-trash-alt' ></i>
+            </div>
+        </div>
+
+        <!-- Box2 -->
+        <div class="box">
+            <img src="pant.jpg" alt="">
+            <div class="text">
+                <h3>Pant</h3>
+                <span>$50</span>
+                <span>x1</span>
+                <i class='bx bxs-trash-alt' ></i>s
+            </div>
+        </div>
+            <h2>Total:$100</h2>
+            <a href="#" class="btn">checkout</a>
+
+    </div>
+ <!-- User -->
+    <div class="user">
+        <h2>Login Now</h2>
+        <input type="email" placeholder="Enter your Email...">
+        <input type="password" name="" id="" placeholder="Enter your Password">
+        <input type="submit" value="Login" class="login-btn">
+        <p> Forgot Password <a href="#">Reset Now</a></p>
+        <p> Don't have account  <a href="#">Create  Now</a></p>
+    </div>
+</header>
+
+<div class="location">
+    <h2>Select State and City</h2>
+    <form>
+        <div class="form-group">
+            <label for="state">Select State:</label>
+            <select id="state" name="state" onchange="updateCities()">
+                <option value="">-- Select State --</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+                <option value="Florida">Florida</option>
+                <option value="New York">New York</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">Select City:</label>
+            <select id="city" name="city">
+                <option value="">-- Select City --</option>
+            </select>
+        </div>
+    </form>
+</div>
+<!-- Home -->
+<section class="home" id="home">
+    <div class="home-text">
+        <span>Shop Now</span>
+        <h1>New Arriaval of <br>fresh Products</h1>
+        <a herf="#" class="btn">Shop Now</a>
+    </div>
+    <div class="home-img">
+        <img src="hero_image.jpg" alt="">   
+    </div>
+</section>
+<!-- Nerw Arrival -->
+<section class="new" id="new">
+            <div class="heading">
+                <h1>New<span>Arrival</span></h1>
+            </div>
+    <div class="swiper new-arrival">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="box8_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="box6_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="box7_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="box5_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="box4_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="box3_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="box2_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="box1_image.jpg" alt="">
+                <div class="content">
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /products -->
+ <section class="product" id="product">
+    <div class="heading">
+        <h1>Our<span>Products</span></h1>
+    </div>
+    <div class="product-container">
+        <div class="box">
+            <img src="bot.jpg" alt="">
+            <div class="content">
+                <h2>Bottle</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$20.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p2.jpg" alt="">
+            <div class="content">
+                <h2>Play Station</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$450.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p3.jpg" alt="">
+            <div class="content">
+                <h2>Head Phone</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$105.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p4.jpg" alt="">
+            <div class="content">
+                <h2>Clothes</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$120.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p5.jpg" alt="">
+            <div class="content">
+                <h2>Glasses</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$90.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p6.jpg" alt="">
+            <div class="content">
+                <h2>Camera</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$394.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p7.jpg" alt="">
+            <div class="content">
+                <h2>Shoes</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$95.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="p8.jpg" alt="">
+            <div class="content">
+                <h2>I Phone</h2>
+                
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <span>$205.05</span>
+                <i class='bx bxs-cart-alt' ></i>
+            </div>
+        </div>
+    </div>
+ </section>
+
+<!-- Reviews -->
+ <section class="reviews" id="reviews">
+    <div class="heading">
+        <h1>Our<span>Customer's</span></h1>
+    </div>
+    <div class="reviews-container">
+        <div class="box">
+            <img src="r1.jpg" alt="">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet. ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, reprehenderit.</p>
+            <h2>Martha</h2>
+        </div>
+
+        <div class="box">
+            <img src="r2.jpg" alt="">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, possimus? ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, reprehenderit.</p>
+            <h2>Allina Williom</h2>
+        </div>
+
+        <div class="box">
+            <img src="r3.jpg" alt="">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aliquam officia corporis. ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, reprehenderit.</p>
+            <h2>Jorj Will</h2>
+        </div>
+
+        <div class="box">
+            <img src="r4.jpg" alt="">
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt optio incidunt consectetur quasi veritatis ratione! ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, reprehenderit.</p>
+            <h2>Williom sain</h2>
+        </div>
+    </div>
+ </section>
+<!-- Footer -->
+ <section class="footer">
+    <div class="footer-box">
+        <h2>Vipanee</h2>     
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi, maiores!</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+        </div>
+    </div>
+
+            <div class="footer-box">
+                <h3>Support</h3>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Help & Support</a></li>
+                <li><a href="#">Return Policy </a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">FAQ</a></li>
+            </div>
+
+            <div class="footer-box">
+                <h3>Branches</h3>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#"></a>Delhi</li>
+                <li><a href="#">Gujrat</a></li>
+                <li><a href="#">Pune</a></li>
+                <li><a href="#">Banglore</a></li>
+            </div>
+
+            <div class="footer-box">
+                <h3>Payments Methods</h3>
+               <div class="payment">
+                <img src="rupay_icon.png" alt="">
+                <img src="master_method_card_payment_icon.png" alt="">
+                <img src="paypal_method_payment_icon.png" alt="">
+                <img src="amazon_icon.png" alt="">
+               </div>
+            </div>
+
+
+
+</section>
+
+<!-- Copyrights  -->
+ <div class="copyright">
+    <p>&#169; Vipanee All Right Reserved.</p>
+ </div>
+
+
+
+
+
+
+
+
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- link to js -->
+  <script src="print.js"></script> 
+</body> 
+ </html>
